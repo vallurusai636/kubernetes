@@ -66,7 +66,7 @@ sudo systemctl enable --now kubelet
   ```
 ## 5. Add pod network add-ons (Run this only on master)
   
-    kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s-1.11.yaml
         
   ## 6. Take note of kubeadm command and run on all workers
   
